@@ -1,0 +1,23 @@
+[
+  {
+    "id": "cardigan",
+    "name": "Vintage cardigan",
+    "price": 120,
+    "type": "fashion",
+    "emoji": "🧶"
+  },
+  {
+    "id": "lamp",
+    "name": "Đèn bàn cổ",
+    "price": 95,
+    "type": "decor",
+    "emoji": "🪔"
+  },
+  {
+    "id": "vase",
+    "name": "Bình hoa gốm",
+    "price": 55,
+    "type": "decor",
+    "emoji": "🏺"
+  }
+]

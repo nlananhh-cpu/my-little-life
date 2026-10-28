@@ -1,0 +1,17 @@
+[
+  {
+    "id": "thrift_find",
+    "title": "A lucky find",
+    "text": "Bạn tìm thấy món đồ vintage hiếm ở cửa hàng secondhand."
+  },
+  {
+    "id": "exam",
+    "title": "Test day",
+    "text": "Có bài kiểm tra nhỏ ở trường — ôn tập giúp bạn tự tin hơn."
+  },
+  {
+    "id": "rain",
+    "title": "Rainy afternoon",
+    "text": "Trời mưa ở Kungälv. Một buổi chiều ở nhà cũng thật dễ chịu."
+  }
+]

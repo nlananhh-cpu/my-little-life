@@ -1,0 +1,33 @@
+[
+  {
+    "id": "cozy",
+    "name": "Cozy Student",
+    "emoji": "👩🏻‍🎓",
+    "owned": true
+  },
+  {
+    "id": "classic",
+    "name": "Vintage Classic",
+    "emoji": "👗",
+    "owned": true
+  },
+  {
+    "id": "weekend",
+    "name": "Slow Sunday",
+    "emoji": "🧸",
+    "owned": true
+  },
+  {
+    "id": "cardigan",
+    "name": "Secondhand Darling",
+    "emoji": "🧥",
+    "owned": false
+  },
+  {
+    "id": "rainy",
+    "name": "Rainy Day",
+    "emoji": "🧣",
+    "price": 75,
+    "owned": false
+  }
+]

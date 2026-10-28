@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7efe3">
+  <title>My Little Life — Tandsköterska Diaries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="My Little Life home" data-go="home">
+        <span class="brand-mark">♡</span>
+        <span><strong>My Little Life</strong><small>Tandsköterska Diaries</small></span>
+      </a>
+      <div class="date-pill"><span id="day-label">MONDAY · DAY 1</span><strong id="clock-label">08:00</strong></div>
+      <button class="icon-btn" id="sound-toggle" aria-label="Toggle sound" title="Âm thanh">♫</button>
+    </header>
+
+    <section class="status-strip" aria-label="Trạng thái nhân vật">
+      <div class="player-chip"><div class="avatar" aria-hidden="true">👩🏻‍🎓</div><div><strong>Lisa</strong><small>Sinh viên tandsköterska 🇸🇪</small></div></div>
+      <div class="stat"><span>💰</span><div><small>Tiền còn</small><strong id="money-stat">850 kr</strong></div></div>
+      <div class="stat"><span>⚡</span><div><small>Năng lượng</small><strong id="energy-stat">75%</strong></div></div>
+      <div class="stat"><span>♡</span><div><small>Tâm trạng</small><strong id="mood-stat">80%</strong></div></div>
+      <div class="stat"><span>🦷</span><div><small>Kiến thức</small><strong id="knowledge-stat">12</strong></div></div>
+    </section>
+
+    <main>
+      <section id="map-screen" class="screen">
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR LITTLE WORLD</p><h1>Hôm nay mình đi đâu?</h1><p class="muted">Một ngày nhỏ xinh ở Kungälv. Chọn một địa điểm để bắt đầu.</p></div>
+          <div class="weather-card"><span id="weather-icon">🌤️</span><div><strong id="weather-label">8°C · Se lạnh</strong><small>Thời tiết hôm nay</small></div></div>
+        </div>
+        <div class="map-layout">
+          <div class="illustrated-map" aria-label="Bản đồ minh họa">
+            <div class="river"></div><div class="park park-one">✿<br>GARDEN</div><div class="park park-two">🌲</div>
+            <div class="bridge"></div>
+            <div class="map-town">KUNGÄLV <span>♡</span></div>
+            <button class="map-pin pin-home" data-location="home"><span class="pin-emoji">🏡</span><span><b>Sweet Home</b><small>Mèo đang đợi!</small></span></button>
+            <button class="map-pin pin-school" data-location="school"><span class="pin-emoji">🦷</span><span><b>YH School</b><small>Học & thực tập</small></span></button>
+            <button class="map-pin pin-thrift" data-location="thrift"><span class="pin-emoji">🧥</span><span><b>Secondhand</b><small>Đồ vintage</small></span></button>
+            <button class="map-pin pin-market" data-location="market"><span class="pin-emoji">🥕</span><span><b>ICA Market</b><small>Đồ ăn & nhu yếu phẩm</small></span></button>
+            <button class="map-pin pin-cafe" data-location="cafe"><span class="pin-emoji">☕</span><span><b>Cozy Café</b><small>Cà phê & nghỉ ngơi</small></span></button>
+            <div class="map-label label-lake">LILLA ÅN</div><div class="map-label label-bus">🚏 BUS STOP</div>
+          </div>
+          <aside class="side-panel">
+            <div class="panel-title"><span>✦</span><div><h2>Nhật ký hôm nay</h2><p class="muted">Little choices, big feelings.</p></div></div>
+            <div class="quest-card"><span class="quest-icon">📚</span><div><strong>Ưu tiên hôm nay</strong><p id="daily-goal">Ôn bài 20 phút và chăm hai bé mèo.</p></div></div>
+            <div class="cat-mini"><div class="cat-art">🐈</div><div><strong>Miso & Boba</strong><p id="cat-status">Hai bé đang chờ bữa sáng.</p><div class="mini-meter"><span id="cat-meter"></span></div></div></div>
+            <div class="chapter-card"><span class="chapter-tag" id="chapter-tag">CHAPTER 1</span><h3 id="chapter-title">A Fresh Start</h3><p id="chapter-desc">Bắt đầu một nhịp sống mới: học hành, chăm mèo và tìm niềm vui trong những điều giản dị.</p><div class="progress-track"><span id="chapter-progress"></span></div><small id="chapter-progress-label">0 / 3 mục tiêu hoàn thành</small></div>
+            <button class="primary-btn wide" data-go="home">Về nhà một chút <span>→</span></button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="location-screen" class="screen hidden">
+        <button class="back-link" data-go="map">← Quay lại bản đồ</button>
+        <div class="location-hero" id="location-hero">
+          <div class="location-art" id="location-art">🏡</div>
+          <div class="location-copy"><p class="eyebrow" id="location-eyebrow">YOUR SAFE PLACE</p><h1 id="location-title">Sweet Home</h1><p id="location-description">Một căn hộ nhỏ, ánh nắng dịu và hai bé mèo.</p><span class="open-label">OPEN · YOUR STORY CONTINUES</span></div>
+        </div>
+        <div class="section-heading compact"><div><p class="eyebrow">CHOOSE AN ACTION</p><h2>Bây giờ mình muốn…</h2></div><span class="time-cost">⏳ Mỗi hoạt động tốn thời gian</span></div>
+        <div class="action-grid" id="action-grid"></div>
+      </section>
+
+      <section id="wardrobe-screen" class="screen hidden">
+        <button class="back-link" data-go="map">← Quay lại bản đồ</button>
+        <div class="section-heading"><div><p class="eyebrow">YOUR PERSONAL STYLE</p><h1>Tủ đồ của Lisa</h1><p class="muted">Mặc thứ khiến mình thấy tự tin. Hôm nay không cần hoàn hảo, chỉ cần là mình.</p></div><div class="wardrobe-avatar" id="wardrobe-avatar">👩🏻‍🎓</div></div>
+        <div class="wardrobe-layout"><div><h2 class="subheading">Trang phục đã có</h2><div id="outfit-grid" class="outfit-grid"></div></div><aside class="side-panel"><p class="eyebrow">TODAY'S LOOK</p><div class="look-preview" id="look-preview">👩🏻‍🎓</div><h2 id="look-name">Cozy Student</h2><p class="muted" id="look-description">Thoải mái để đi học và chạy xe buýt.</p><button class="primary-btn wide" id="wear-btn">Mặc bộ này ✓</button><p class="tiny-note">Trang phục mới có thể tìm thấy ở cửa hàng secondhand.</p></aside></div>
+      </section>
+
+      <section id="inventory-screen" class="screen hidden">
+        <button class="back-link" data-go="map">← Quay lại bản đồ</button>
+        <div class="section-heading"><div><p class="eyebrow">YOUR LITTLE TREASURES</p><h1>Túi đồ & căn hộ</h1><p class="muted">Những món đồ mình đã tìm được và chọn giữ lại.</p></div></div>
+        <div class="inventory-layout"><div><h2 class="subheading">Đồ đã sở hữu</h2><div id="inventory-grid" class="inventory-grid"></div></div><aside class="side-panel"><p class="eyebrow">HOME DECOR</p><div class="room-preview"><div class="window">☀</div><div class="plant">🪴</div><div class="sofa">🛋️</div><div class="lamp">🪔</div><div class="cat-on-sofa">🐈</div></div><h2>Căn hộ nhỏ</h2><p id="decor-count" class="muted">Bạn có 0 món đồ trang trí.</p><div class="cozy-score"><span>Cozy level</span><strong id="cozy-score">♡ 1</strong></div></aside></div>
+      </section>
+
+      <section id="journal-screen" class="screen hidden">
+        <button class="back-link" data-go="map">← Quay lại bản đồ</button>
+        <div class="section-heading"><div><p class="eyebrow">LITTLE MOMENTS</p><h1>Nhật ký của Lisa</h1><p class="muted">Không phải ngày nào cũng rực rỡ. Ngày nào cũng đáng được ghi nhớ.</p></div><div class="journal-icon">📖</div></div>
+        <div id="journal-list" class="journal-list"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Điều hướng chính">
+      <button class="nav-item active" data-go="map"><span>🗺️</span><small>Bản đồ</small></button>
+      <button class="nav-item" data-go="wardrobe"><span>👗</span><small>Tủ đồ</small></button>
+      <button class="nav-item" data-go="inventory"><span>🪴</span><small>Đồ đạc</small></button>
+      <button class="nav-item" data-go="journal"><span>📖</span><small>Nhật ký</small></button>
+      <button class="nav-item" id="save-button"><span>💾</span><small>Lưu game</small></button>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop hidden" id="modal-backdrop">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Đóng">×</button>
+      <div class="modal-emoji" id="modal-emoji">✨</div>
+      <p class="eyebrow" id="modal-eyebrow">A LITTLE MOMENT</p>
+      <h2 id="modal-title">Một lựa chọn nhỏ</h2>
+      <p id="modal-text">Mỗi lựa chọn tạo nên câu chuyện riêng của bạn.</p>
+      <div id="modal-extra"></div>
+      <button class="primary-btn wide" id="modal-confirm">Tiếp tục ngày mới →</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

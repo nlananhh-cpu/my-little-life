@@ -1,0 +1,51 @@
+{
+  "home": {
+    "name": "Sweet Home",
+    "emoji": "🏡",
+    "actions": [
+      "feed",
+      "clean",
+      "studyhome",
+      "rest",
+      "decorate"
+    ]
+  },
+  "school": {
+    "name": "YH School",
+    "emoji": "🦷",
+    "actions": [
+      "class",
+      "library",
+      "lunch",
+      "internship"
+    ]
+  },
+  "thrift": {
+    "name": "Secondhand Boutique",
+    "emoji": "🧥",
+    "actions": [
+      "browse",
+      "cardigan",
+      "lamp",
+      "vase"
+    ]
+  },
+  "market": {
+    "name": "ICA Market",
+    "emoji": "🥕",
+    "actions": [
+      "groceries",
+      "catfood",
+      "treat"
+    ]
+  },
+  "cafe": {
+    "name": "Cozy Café",
+    "emoji": "☕",
+    "actions": [
+      "coffee",
+      "journal",
+      "friends"
+    ]
+  }
+}
