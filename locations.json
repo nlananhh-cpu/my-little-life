@@ -26,6 +26,8 @@
     "actions": [
       "browse",
       "cardigan",
+      "trinket",
+      "marble table",
       "lamp",
       "vase"
     ]
@@ -40,10 +42,11 @@
     ]
   },
   "cafe": {
-    "name": "Cozy Café",
+    "name": "Moya Matcha",
     "emoji": "☕",
     "actions": [
       "coffee",
+      "matcha",
       "journal",
       "friends"
     ]
